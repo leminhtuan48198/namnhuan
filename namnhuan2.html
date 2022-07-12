@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let year=Number(prompt('nhap nam'))
+    let isLeapYear = false
+    let chiaHetCho4 = year%4==0
+    let chiaHetCho100 = year%100==0
+    let chiahetCho400 = year%400==0
+    if (chiaHetCho4) {
+        if( chiaHetCho100){
+            if (chiahetCho400) {
+                isLeapYear = true
+            }} else {isLeapYear=true}
+    }
+    if (isLeapYear==true) {
+        alert( year+ " la nam nhuan")
+    } else {
+        alert (year+ " khong la nam nhuan")
+    }
+</script>
+</body>
+</html>
